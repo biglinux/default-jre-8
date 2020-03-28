@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=IcedTea Web Start
+GenericName=Java Web Start
+Comment=IcedTea Application Launcher
+Exec=/usr/local/bin/javaws %u
+Icon=javaws
+Terminal=false
+Type=Application
+NoDisplay=true
+Categories=Application;Network;
+MimeType=application/x-java-jnlp-file;x-scheme-handler/jnlp;x-scheme-handler/jnlps

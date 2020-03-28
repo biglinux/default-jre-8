@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=default-jre-8
+mkdir -p "/usr/share/dpkgdivert/default-jre-8"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/default-jre-8/usrshareapplicationsicedtea-netx-javaws.desktop" --rename "/usr/share/applications/icedtea-netx-javaws.desktop"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/share/applications/icedtea-netx-javaws.desktop")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/default-jre-8/usrshareapplicationsicedtea-netx-javaws.desktop" --rename "/usr/share/applications/icedtea-netx-javaws.desktop"
+fi
+;;
+esac
+exit 0

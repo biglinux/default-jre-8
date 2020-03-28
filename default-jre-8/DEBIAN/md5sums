@@ -1,0 +1,7 @@
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+5ddfb4357cbec7eee07c171e9e305bf7  DEBIAN/dpkg-divert
+a07087671f6cf1f2d92831a4e9064155  DEBIAN/preinst
+1a6425019308798ea1c681943a71a597  DEBIAN/postrm
+45c8abc26e9b1f8aa826a9446a59ea34  DEBIAN/control
+12bdbe25fba09bab03ebbdbaeb94b08b  usr/share/applications/icedtea-netx-javaws.desktop
+a076f60ddcbe81197be7c5887fa12a41  usr/local/bin/javaws

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ "$(java -version 2>&1 | grep OpenJDK | grep ubuntu)" != "" ]; then
+    /usr/bin/javaws -nosecurity ${1+"$@"}
+else
+    /usr/bin/javaws ${1+"$@"}
+fi
+
+
+
